@@ -3,7 +3,7 @@ import math
 import random
 from turtle import *
 
-class Spiral:
+class Circular:
     def __init__(self, diameter, stroke_width, x0, y0):
         self.turt = turtle.Turtle()
         self.stroke_width = stroke_width
@@ -23,7 +23,6 @@ class Spiral:
     def draw(self, angle):
         x = self._calc_x(angle, self.amplitude)
         y = self._calc_y(angle, self.amplitude)
-        self.amplitude += 1
         self.turt.pendown()
         self.turt.goto(x, y)
 
@@ -32,6 +31,14 @@ class Spiral:
 
     def _calc_y(self, angle, amplitude):
         return self.amplitude * math.cos((angle * self.frequency) + self.phase) + self.y
+
+class Spiral(Circular):
+    def draw(self, angle):
+        x = self._calc_x(angle, self.amplitude)
+        y = self._calc_y(angle, self.amplitude)
+        self.amplitude += 1
+        self.turt.goto(x, y)
+        self.turt.pendown()
 
 spirals = []
 
