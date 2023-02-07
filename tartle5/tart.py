@@ -40,18 +40,19 @@ class Spiral(Circular):
         self.turt.goto(x, y)
         self.turt.pendown()
 
-spirals = []
+def run():
+    spirals = []
 
-for s in range(10):
-    x = random.randint(-200, 200)
-    y = random.randint(-200, 200)
-    spirals.append(Spiral(10, 2, x, y))
+    for s in range(10):
+        x = random.randint(-200, 200)
+        y = random.randint(-200, 200)
+        spirals.append(Spiral(10, 2, x, y))
 
-def draw_all():
     for angle in range(0, 45):
         for spiral in spirals:
             spiral.draw(angle)
 
-turtle.listen()
-turtle.onkey(draw_all, 'r')
-turtle.mainloop()
+
+# turtle.listen()
+# turtle.onkey(draw_all, 'r')
+# turtle.mainloop()
