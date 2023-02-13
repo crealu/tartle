@@ -47,6 +47,3 @@ def run():
 
 	img = ImageGrab.grab(bbox=bounds)
 	img.save(this_dir + '/tartle8/tart.png', quality=95)
-
-
-
