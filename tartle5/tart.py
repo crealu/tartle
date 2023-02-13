@@ -52,7 +52,3 @@ def run():
         for spiral in spirals:
             spiral.draw(angle)
 
-
-# turtle.listen()
-# turtle.onkey(draw_all, 'r')
-# turtle.mainloop()
