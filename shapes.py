@@ -35,7 +35,7 @@ class Rhombus:
     def __init__(self, stroke_width, x0, y0):
         self.turt = turtle.Turtle()
         self.stroke_width = stroke_width
-        self.side_length = 40
+        self.side_length = 30
         self.angles = [45, 135, 225, 315]
         self.x = x0
         self.y = y0
