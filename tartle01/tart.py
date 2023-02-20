@@ -1,5 +1,12 @@
-import turtle, math
-from turtle import *
+import turtle
+import math
+import os
+import PIL
+from PIL import ImageGrab
+from PIL import Image
+
+this_dir = os.getcwd()
+bounds = (366, 140, 1060, 800)
 
 leo = turtle.Turtle()
 leo.pencolor(1, 0, 0)
@@ -49,6 +56,11 @@ def run():
             t.setheading(0)
             t.forward(100)
 
-turtle.listen()
-turtle.onkey(run, 'r')
-turtle.mainloop()
+    img = ImageGrab.grab(bbox=bounds)
+    img.save(this_dir + '/tartle01/tart.png', quality=95)
+
+
+
+# turtle.listen()
+# turtle.onkey(run, 'r')
+# turtle.mainloop()
