@@ -6,7 +6,7 @@ Images captured automatically upon drawing completion usin Pillow.
 &nbsp;
 ## Examples
 
-![alt text](./tartle1/tart.png)
+![alt text](./tartle01/tart.png)
 &nbsp;
 tartle 1
 &nbsp;
