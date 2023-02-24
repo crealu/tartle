@@ -1,7 +1,13 @@
+import os
+import PIL
+from PIL import ImageGrab
+from PIL import Image
 import turtle
-import math
 import random
-from turtle import *
+import math
+
+this_dir = os.getcwd()
+bounds = (366, 140, 1060, 800)
 
 class Circular:
     def __init__(self, diameter, stroke_width, x0, y0):
@@ -51,4 +57,7 @@ def run():
     for angle in range(0, 45):
         for spiral in spirals:
             spiral.draw(angle)
+
+    img = ImageGrab.grab(bbox=bounds)
+    img.save(this_dir + '/tartle05/tart.png', quality=95)
 

@@ -1,6 +1,13 @@
+import os
+import PIL
+from PIL import ImageGrab
+from PIL import Image
 import turtle
+import random
 import math
-from turtle import *
+
+this_dir = os.getcwd()
+bounds = (366, 140, 1060, 800)
 
 don = turtle.Turtle()
 
@@ -50,7 +57,5 @@ def run():
         mike.goto(x+mike_offset, y+mike_offset)
         raph.goto(-x+raph_offset+10, y+raph_offset+10)
     print('done')
-
-turtle.listen()
-turtle.onkey(run, 'r')
-turtle.mainloop()
+    img = ImageGrab.grab(bbox=bounds)
+    img.save(this_dir + '/tartle04/tart.png', quality=95)

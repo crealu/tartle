@@ -1,8 +1,14 @@
+import os
+import PIL
+from PIL import ImageGrab
+from PIL import Image
 import turtle
-import math
 import random
-from turtle import *
+import math
 from shapes import Circular
+
+this_dir = os.getcwd()
+bounds = (366, 140, 1060, 800)
 
 def run():
 	circles = []
@@ -14,3 +20,6 @@ def run():
 	for angle in range(0, 30):
 		for circle in circles:
 			circle.draw(angle)
+
+	img = ImageGrab.grab(bbox=bounds)
+	img.save(this_dir + '/tartle06/tart.png', quality=95)

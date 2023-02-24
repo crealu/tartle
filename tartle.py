@@ -1,6 +1,6 @@
 import turtle
 from turtle import *
-from tartle03.tart import run
+from tartle06.tart import run
 
 turtle.listen()
 turtle.onkey(run, 'r')
