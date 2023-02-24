@@ -1,7 +1,15 @@
-import turtle, math
-from turtle import *
+import os
+import PIL
+from PIL import ImageGrab
+from PIL import Image
+import turtle
+import random
+import math
 
 don = turtle.Turtle()
+
+this_dir = os.getcwd()
+bounds = (366, 140, 1060, 800)
 
 x_0 = -300
 y_0 = 300
@@ -47,8 +55,12 @@ def run():
         elif (new_width == 1):
             crement *= -1
 
+    img = ImageGrab.grab(bbox=bounds)
+    img.save(this_dir + '/tartle02/tart.png', quality=95)
 
 
-turtle.listen()
-turtle.onkey(run, 'r')
-turtle.mainloop()
+
+
+# turtle.listen()
+# turtle.onkey(run, 'r')
+# turtle.mainloop()

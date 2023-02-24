@@ -8,22 +8,34 @@ Images captured automatically upon drawing completion usin Pillow.
 
 ![alt text](./tartle01/tart.png)
 &nbsp;
-tartle 1
+tartle 01
 &nbsp;
+
+![alt text](./tartle02/tart.png)
+&nbsp;
+tartle 02
+&nbsp;
+
+![alt text](./tartle03/tart.png)
+&nbsp;
+tartle 03
+&nbsp;
+
+
 
 ![alt text](./tartle7/tart.png)
 &nbsp;
-tartle 7
+tartle 07
 &nbsp;
 
 ![alt text](./tartle8/tart.png)
 &nbsp;
-tartle 8
+tartle 08
 &nbsp;
 
 ![alt text](./tartle9/tart.png)
 &nbsp;
-tartle 9
+tartle 09
 &nbsp;
 
 ![alt text](./tartle10/tart.png)

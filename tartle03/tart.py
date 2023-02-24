@@ -1,6 +1,13 @@
+import os
+import PIL
+from PIL import ImageGrab
+from PIL import Image
 import turtle
+import random
 import math
-from turtle import *
+
+this_dir = os.getcwd()
+bounds = (366, 140, 1060, 800)
 
 don = turtle.Turtle()
 
@@ -36,7 +43,7 @@ raph.goto(raph_x, raph_y)
 raph.pendown()
 
 def run():
-    for t in range(0, 360):
+    for t in range(0, 180):
         x = -amplitude * math.sin((t * frequency) + phase)
         y = amplitude * math.cos((t * frequency) + phase)
         don.goto(x, y)
@@ -44,6 +51,5 @@ def run():
         mike.goto(x+raph_offset, y+raph_offset)
         raph.goto(x+raph_offset+10, y+raph_offset+10)
 
-turtle.listen()
-turtle.onkey(run, 'r')
-turtle.mainloop()
+    img = ImageGrab.grab(bbox=bounds)
+    img.save(this_dir + '/tartle03/tart.png', quality=95)
