@@ -10,70 +10,44 @@ this_dir = os.getcwd()
 bounds = (366, 140, 1060, 800)
 
 class Arc:
-	def __init__(self, x0, y0, amplitude, frequency, phase):
-		self.turt = turtle.Turtle()
-		self.x = x0
-		self.y = y0
-		self.length = 20
-		self.amp = amplitude
-		self.freq = frequency
-		self.phase = phase
-
-	def setup(self):
-		self.turt.penup()
-		self.turt.width = 4
-		x_0 = self._calc_x(self.x)
-		y_0 = self._calc_y(self.x)
-		self.turt.goto(x_0, y_0)
-
-	def _calc_x(self, t):
-		return t
-
-	def _calc_y(self, t):
-		return math.pow(t, 2) - (2 * t)
-
-	def draw(self):
-		for t in range(self.x, self.x*(-1)):
-			x = self._calc_x(t)
-			y = self._calc_y(t)
-			self.turt.goto(x, y)
-
-class Arc2:
 	def __init__(self, x0, y0):
 		self.turt = turtle.Turtle()
 		self.x = x0
-		self.y = self._calc_y(y0)
+		self.y = y0
 		self.radius = 20
-		self.new_heading = 90
+		self.new_heading = 90 + x0
+		self.amp = 10
+		self.freq = 10
+		self.phase = 8
 
 	def setup(self):
 		self.turt.penup()
-		self.turt.width = 4
+		self.turt.hideturtle()
+		self.turt.width = 10
 		x_0 = self._calc_x(self.x)
-		y_0 = self._calc_y(self.x)
+		y_0 = self._calc_y(self.y)
 		self.turt.goto(x_0, y_0)
 		self.turt.pendown()
 
-	def _calc_x(self, t):
-		return t
+	def _calc_x(self, angle):
+		return self.amp * math.cos((angle/10 * self.freq) + self.phase)
 
-	def _calc_y(self, t):
-		return 90 - t
+
+	def _calc_y(self, angle):
+		return self.amp * math.sin((angle/10 * self.freq) + self.phase)
 
 	def draw(self):
-		for t in range(90):
-			x = t
-			y = self._calc_y(t)
-			self.new_heading = t
+		for t in range(90, -90, -1):
+			self.new_heading = t + self.x
 			self.turt.setheading(self.new_heading)
 			self.turt.forward(1)
 
 def run():
-	# arc1 = Arc(-20, 0, 10, 20, 5)
-	# arc1.setup()
-	# arc1.draw()	
+	for a in range(0, 360, 10):
+		arc2 = Arc(a, a*10)
+		arc2.setup()
+		arc2.draw()
 
-	arc2 = Arc2(90, 0)
-	arc2.setup()
-	arc2.draw()
+	img = ImageGrab.grab(bbox=bounds)
+	img.save(this_dir + '/tartle11/tart.png', quality=95)
 
