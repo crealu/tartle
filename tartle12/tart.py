@@ -11,7 +11,6 @@ this_dir = os.getcwd()
 bounds = (366, 140, 1060, 800)
 
 def run():
-
 	def trail(t):
 		for i in range(0, 6):
 			random_heading = random.randint(-90, 90)

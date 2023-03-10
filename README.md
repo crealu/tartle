@@ -1,7 +1,7 @@
 # Tartle
 Generative art with Python and Turtle
 
-Images captured automatically upon drawing completion usin Pillow.
+Pillow ImageGrab when drawing finishes.
 
 &nbsp;
 ## Examples
