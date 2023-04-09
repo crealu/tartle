@@ -47,11 +47,12 @@ details = [
 ]
 
 class ConcentricCircles:
-    def __init__(self, quantity, x_0, y_0):
+    def __init__(self, quantity, colors, x_0, y_0):
         self.turt = turtle.Turtle()
         self.frequency = math.pi/10
         self.phase = 2
         self.quantity = quantity
+        self.colors = colors
         self.x = x_0
         self.y = y_0
 
@@ -66,6 +67,7 @@ class ConcentricCircles:
     def draw(self):
         for c in range(1, self.quantity):
             diameter = c * 20
+            self.turt.color(self.colors[c-1])
             for angle in range(30):
                 x = self._calc_x(angle, diameter)
                 y = self._calc_y(angle, diameter)
@@ -88,9 +90,10 @@ class ConcentricCircles:
 
 
 def run():
-    circles = ConcentricCircles(6, 0, 0)
-    circles.setup()
-    circles.draw()
+    for deats in details:
+        circles = ConcentricCircles(5, deats['color'], deats['rotation'] - 150, deats['rotation'] - 150)
+        circles.setup()
+        circles.draw()
 
     img = ImageGrab.grab(bbox=bounds)
     img.save(this_dir + '/tartle18/tart.png', quality=95)
