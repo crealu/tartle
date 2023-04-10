@@ -91,7 +91,12 @@ class ConcentricCircles:
 
 def run():
     for deats in details:
-        circles = ConcentricCircles(5, deats['color'], deats['rotation'] - 150, deats['rotation'] - 150)
+        circles = ConcentricCircles(
+            5, 
+            deats['color'], 
+            deats['rotation'] - 150, 
+            deats['rotation'] - 150
+        )
         circles.setup()
         circles.draw()
 
