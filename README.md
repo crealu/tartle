@@ -100,3 +100,13 @@ tartle 18
 &nbsp;
 tartle 19
 &nbsp;
+
+![alt text](./tartle20/tart.png)
+&nbsp;
+tartle 20
+&nbsp;
+
+![alt text](./tartle21/tart.png)
+&nbsp;
+tartle 21
+&nbsp;
