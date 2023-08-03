@@ -22,13 +22,10 @@ purples = ['#db09dc', '#d51eda', '#a53dda', '#bb80ce']
 
 yellows = ['#ffe108', '#f7e250' , '#fbf0a5', '#f7f1c8']
 blue = '#0953dc'
-purple = '#db09dc'
-white = '#FFFFFF'
-color1 = '#ea0606'
 
-amplitude = 100
-frequency = math.pi/10
-phase = 2
+# amplitude = 100
+# frequency = math.pi/10
+# phase = 2
 
 class MillerFestLogo:
     def __init__(self, x, y):
@@ -49,17 +46,17 @@ class MillerFestLogo:
 
         # line 1
         self.turt.setheading(180)
-        for i in range(180, 450, 10):
+        for i in range(180, 450, self.line_lengths[0]):
             self.turt.setheading(i)
             self.turt.forward(self.length)
 
         # line 2
         self.turt.setheading(90)
-        self.turt.forward(100)
+        self.turt.forward(self.line_lengths[1])
 
         # line 3
         self.turt.setheading(300)
-        for j in range(270, 450, 10):
+        for j in range(270, 450, self.line_lengths):
             self.turt.setheading(j)
             self.turt.forward(4)
 
