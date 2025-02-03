@@ -3,38 +3,31 @@ Generative art with Python and Turtle
 
 Pillow ImageGrab when drawing finishes.
 
+## Usage
+1. Clone the repository
+2. Open tartle.py
+3. Set line 3 to the desired drawing number
+- `tartle23.tart` for drawing 23
+4. In a terminal window, run `python tartle.py`
+5. Press `R` when the Python Turtle Graphics window opens
+6. Observe the drawing
+7. Adjust the tart.py to customize the drawing
+
+## Features
+* User controlled drawing animation
+* Boilerplate code for customization
+* Screen capture of completed art (using ImageGrab)
+* Automatic saving of image file in respective folder
+
+
 &nbsp;
 ## Examples
-
-![alt text](./tartle01/tart.png)
-&nbsp;
-tartle 01
-&nbsp;
-
-![alt text](./tartle02/tart.png)
-&nbsp;
-tartle 02
-&nbsp;
-
-![alt text](./tartle03/tart.png)
-&nbsp;
-tartle 03
-&nbsp;
-
-![alt text](./tartle04/tart.png)
-&nbsp;
-tartle 04
-&nbsp;
-
-![alt text](./tartle05/tart.png)
-&nbsp;
-tartle 05
-&nbsp;
-
-![alt text](./tartle06/tart.png)
-&nbsp;
-tartle 06
-&nbsp;
+<img src="./tartle01/tart.png" width="33%">
+<img src="./tartle02/tart.png" width="33%">
+<img src="./tartle03/tart.png" width="33%">
+<img src="./tartle04/tart.png" width="33%">
+<img src="./tartle05/tart.png" width="33%">
+<img src="./tartle06/tart.png" width="33%">
 
 ![alt text](./tartle07/tart.png)
 &nbsp;
