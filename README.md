@@ -24,109 +24,53 @@ Python3 (v3.9.7 or greater)
 &nbsp;
 ## Examples
 <div width="100%">
-	<img src="./tartle01/tart.png" width="33%">
-	<img src="./tartle02/tart.png" width="33%">
-	<img src="./tartle03/tart.png" width="33%">
+	<img src="./tartle01/tart.png" width="30%">
+	<img src="./tartle02/tart.png" width="30%">
+	<img src="./tartle03/tart.png" width="30%">
 </div>
 
 <div width="100%">
-	<img src="./tartle04/tart.png" width="33%">
-	<img src="./tartle05/tart.png" width="33%">
-	<img src="./tartle06/tart.png" width="33%">
+	<img src="./tartle04/tart.png" width="30%">
+	<img src="./tartle05/tart.png" width="30%">
+	<img src="./tartle06/tart.png" width="30%">
 </div>
 
-![alt text](./tartle07/tart.png)
-&nbsp;
-tartle 07
-&nbsp;
+<div width="100%">
+	<img src="./tartle07/tart.png" width="30%">
+	<img src="./tartle08/tart.png" width="30%">
+	<img src="./tartle09/tart.png" width="30%">
+</div>
 
-![alt text](./tartle08/tart.png)
-&nbsp;
-tartle 08
-&nbsp;
+<div width="100%">
+	<img src="./tartle10/tart.png" width="30%">
+	<img src="./tartle11/tart.png" width="30%">
+	<img src="./tartle12/tart.png" width="30%">
+</div>
 
-![alt text](./tartle09/tart.png)
-&nbsp;
-tartle 09
-&nbsp;
+<div width="100%">
+	<img src="./tartle13/tart.png" width="30%">
+	<img src="./tartle14/tart.png" width="30%">
+	<img src="./tartle15/tart.png" width="30%">
+</div>
 
-![alt text](./tartle10/tart.png)
-&nbsp;
-tartle 10
-&nbsp;
+<div width="100%">
+	<img src="./tartle16/tart.png" width="30%">
+	<img src="./tartle17/tart.png" width="30%">
+	<img src="./tartle18/tart.png" width="30%">
+</div>
 
-![alt text](./tartle11/tart.png)
-&nbsp;
-tartle 11
-&nbsp;
+<div width="100%">
+	<img src="./tartle19/tart.png" width="30%">
+	<img src="./tartle20/tart.png" width="30%">
+	<img src="./tartle21/tart.png" width="30%">
+</div>
 
-![alt text](./tartle12/tart.png)
-&nbsp;
-tartle 12
-&nbsp;
+<div width="100%">
+	<img src="./tartle22/tart.png" width="30%">
+	<img src="./tartle23/tart.png" width="30%">
+	<img src="./tartle24/tart.png" width="30%">
+</div>
 
-![alt text](./tartle13/tart.png)
-&nbsp;
-tartle 13
-&nbsp;
-
-![alt text](./tartle14/tart.png)
-&nbsp;
-tartle 14
-&nbsp;
-
-![alt text](./tartle15/tart.png)
-&nbsp;
-tartle 15
-&nbsp;
-
-![alt text](./tartle16/tart.png)
-&nbsp;
-tartle 16
-&nbsp;
-
-![alt text](./tartle17/tart.png)
-&nbsp;
-tartle 17
-&nbsp;
-
-![alt text](./tartle18/tart.png)
-&nbsp;
-tartle 18
-&nbsp;
-
-![alt text](./tartle19/tart.png)
-&nbsp;
-tartle 19
-&nbsp;
-
-![alt text](./tartle20/tart.png)
-&nbsp;
-tartle 20
-&nbsp;
-
-![alt text](./tartle21/tart.png)
-&nbsp;
-tartle 21
-&nbsp;
-
-![alt text](./tartle22/tart.png)
-&nbsp;
-tartle 22
-&nbsp;
-
-![alt text](./tartle23/tart.png)
-&nbsp;
-tartle 23
-&nbsp;
-
-![alt text](./tartle24/tart.png)
-&nbsp;
-tartle 24
-&nbsp;
-
-
-![alt text](./tartle25/tart.png)
-&nbsp;
-tartle 25
-&nbsp;
+<div width="100%">
+	<img src="./tartle25/tart.png" width="30%">
+</div>
